@@ -7,3 +7,5 @@ Style/Documentation:
   Enabled: false
 Rails/FilePath:
   Enabled: false
+Metrics/BlockLength:
+  Enabled: false
