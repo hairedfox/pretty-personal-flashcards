@@ -6,6 +6,7 @@ AllCops:
     - config/initializers/**/*
     - node_modules/**/*
     - bin/**/*
+    - db/**/*.rb
 
 Style/Documentation:
   Enabled: false
