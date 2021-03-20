@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <%= link_to "Pretty Flashcards", root_path, class: "navbar-brand" %>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "Home", root_path, class: "nav-link" %>
+      </li>
+    </ul>
+    <ul class="navbar-nav mt-md-0">
+      <li class="nav-item">
+        <%= link_to "Login", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Sign Up", "#", class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</nav>
