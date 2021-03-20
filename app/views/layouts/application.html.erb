@@ -10,6 +10,11 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render "layouts/navbar" %>
+    <main class="container mt-2" role="main">
+      <%= yield %>
+      <hr>
+    </main>
+    <%= render "layouts/footer" %>
   </body>
 </html>
