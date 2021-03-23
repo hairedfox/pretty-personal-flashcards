@@ -2,9 +2,8 @@ class CreateCard < ActiveRecord::Migration[6.0]
   def change
     create_table :cards do |t|
       t.references :user
-      t.string :front
-      t.string :back
-      t.string :sound
+      t.text :front
+      t.text :back
 
       t.timestamps
     end

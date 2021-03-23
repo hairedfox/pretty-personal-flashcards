@@ -3,7 +3,6 @@ class CreateDeck < ActiveRecord::Migration[6.0]
     create_table :decks do |t|
       t.references :user
       t.string :name
-      t.string :cover
 
       t.timestamps
     end
