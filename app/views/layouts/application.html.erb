@@ -7,13 +7,14 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= controller_stylesheet %>
+    <%= controller_javascript %>
   </head>
 
-  <body>
+  <body class='min-height-100 d-flex flex-column'>
     <%= render "layouts/navbar" %>
-    <main class="container mt-2" role="main">
+    <main class="container mt-2 flex-grow-1" role="main">
       <%= yield %>
-      <hr>
     </main>
     <%= render "layouts/footer" %>
   </body>
