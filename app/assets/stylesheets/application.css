@@ -12,32 +12,5 @@
  *
  *= require bootstrap
  *= require_self
- *= require custom_bootstrap
+ *= require custom
  */
-
- .content-center {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-}
-
- .form-devise {
-  width: 500px;
-  padding: 45px 90px 30px;
-  margin-bottom: 20px;
-  border: solid 1px #373A3C;
-  border-radius: 3px;
-  background-color: #fff;
-}
-
-.alert-alert {
-  background-color: #FCF7E4;
-  border-color: #FCF7E4;
-}
-
-.alert-danger {
-  color: #721c24;
-  background-color: #f8d7da;
-  border-color: #f5c6cb;
-}
