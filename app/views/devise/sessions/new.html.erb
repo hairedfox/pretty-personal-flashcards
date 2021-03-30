@@ -16,14 +16,14 @@
             <%= f.label :password, 'Password' %>
             <%= f.password_field :password, class: 'form-control' %>
           </div>
-          <div class='d-flex align-items-center margin-bottom-15'>
+          <div class='d-flex align-items-center margin-bottom--15'>
             <%= label_tag '', class: 'remember' do %>
               <%= f.check_box :remember_me %>
               <%= f.label 'Remember me', class: 'remember-text', for: :user_remember_me %>
               <span class='checkmark'></span>
             <% end %>
           </div>
-          <div class='d-flex justify-content-center margin-bottom-15'>
+          <div class='d-flex justify-content-center margin-bottom--15'>
             <%= f.submit 'Login', class: 'form-control btn btn-primary login-button' %>
           </div>
         <% end %>

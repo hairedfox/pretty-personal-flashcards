@@ -2,18 +2,32 @@
   flex-direction: column
 }
 
-.min-height-100 {
-  min-height: 100vh
-}
-
 .flex-grow-1 {
   flex-grow: 1
 }
 
-.margin-bottom-15 {
-  margin-bottom: 15px
+.margin-bottom {
+  &--15 {
+    margin-bottom: 15px
+  }
+
+  &--30 {
+    margin-bottom: 30px
+  }
 }
 
-.margin-bottom-30 {
-  margin-bottom: 30px
+.w {
+  &--60 {
+    width: 60%;
+  }
+
+  &--70 {
+    width: 70%;
+  }
+}
+
+.min-height {
+  &--100 {
+    min-height: 100vh;
+  }
 }
