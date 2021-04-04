@@ -1,0 +1,7 @@
+en:
+  decks:
+    new:
+      title: New Deck
+    create:
+      succeeded: Created Successfully.
+      failed: Failed To Create.

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class ConfirmationsController < ApplicationController
   def show
     resource = User.confirm_by_token(params[:confirmation_token])
