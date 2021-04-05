@@ -1,0 +1,9 @@
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <%= t("button.create") %>
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <%= link_to "Deck", new_deck_path, class: "dropdown-item" %>
+    <%= link_to "Card", "#", class: "dropdown-item" %>
+  </div>
+</div>

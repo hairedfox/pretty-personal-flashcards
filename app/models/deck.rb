@@ -5,4 +5,6 @@ class Deck < ApplicationRecord
   has_many :links
   has_many :cards, through: :links
   has_one_attached :cover
+
+  validates :name, presence: true
 end

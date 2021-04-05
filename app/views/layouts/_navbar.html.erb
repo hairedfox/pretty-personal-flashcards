@@ -8,6 +8,9 @@
       <li class="nav-item">
         <%= link_to "Home", root_path, class: "nav-link" %>
       </li>
+      <li class="nav-item">
+        <%= render "layouts/nav_dropdown" %>
+      </li>
     </ul>
     <% unless current_user %>
       <ul class="navbar-nav mt-md-0">

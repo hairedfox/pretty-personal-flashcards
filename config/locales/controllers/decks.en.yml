@@ -5,3 +5,5 @@ en:
     create:
       succeeded: Created Successfully.
       failed: Failed To Create.
+    form:
+      name: "Enter Deck's Name"
