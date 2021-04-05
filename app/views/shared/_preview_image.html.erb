@@ -1,0 +1,5 @@
+<div class="mt-3" data-action="click->image#selectFile">
+  <%= form.file_field :cover, class: "form-control-file d-none", data: { action: "change->image#previewImage", "image-target": "fileSelect" } %>
+  <%= button_tag call_to_action, class: "file-select", type: "button", data: { "image-target": "trigger" } %>
+  <%= image_tag "", data: { "image-target": "preview" }, class: "w-100 mb-2 pointer" %>
+</div>
