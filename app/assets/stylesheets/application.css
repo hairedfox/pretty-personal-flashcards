@@ -13,5 +13,7 @@
  *= require bootstrap
  *= require font-awesome
  *= require_self
- *= require custom
- */
+ *= require_tree .
+*/
+
+/* TODO: add `require custom` and get rid of `require_tree .`. Add require_tree for now. */

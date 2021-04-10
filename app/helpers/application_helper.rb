@@ -5,7 +5,7 @@ module ApplicationHelper
     Time.current.year == 2021 ? 'present' : 2021
   end
 
-  def controller_stylesheet(options = { media: 'all' })
+  def controller_stylesheet(options = { media: 'all', 'data-turbolinks-track': 'reload' })
     path = File.join(controller_path, action_name)
     stylesheet_link_tag(path, options) if Rails.application.assets.find_asset(path)
   end

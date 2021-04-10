@@ -33,3 +33,6 @@ yarn-debug.log*
 # Environment file
 .env
 .env.development
+
+# IntelliJ
+/.idea
