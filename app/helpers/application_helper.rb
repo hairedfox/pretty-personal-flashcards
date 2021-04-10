@@ -15,6 +15,12 @@ module ApplicationHelper
     javascript_pack_tag(path, options) if javascript_exists?(path)
   end
 
+  def present(obj, method_name, *args)
+    presenter_name = "#{obj.class.name}Decorator"
+    presenter = Object.const_defined?(presenter_name) ? presenter_name.constantize : BaseDecorator
+    presenter.new(object).public_send(method_name, *args)
+  end
+
   private
 
   def javascript_exists?(script)
