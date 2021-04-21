@@ -3,6 +3,11 @@
     = form.text_field :name, class: "form-control", placeholder: t(".name")
     = render "shared/preview_image", form: form, call_to_action: t("button.add_cover")
     .text-right
+      = link_to decks_path, class: "btn btn-success mr-2" do
+        == fa_icon("backward")
+        | &nbsp;
+        = t("button.back")
       = button_tag class: "btn btn-primary" do
         == fa_icon("paper-plane")
+        | &nbsp;
         = t("button.create")

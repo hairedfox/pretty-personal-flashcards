@@ -7,3 +7,7 @@ en:
       failed: Failed To Create.
     form:
       name: "Enter Deck's Name"
+    deactivate:
+      succeeded: Deactivated Successfully.
+    restore:
+      succeeded: Restored Successfully.

@@ -60,7 +60,8 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'stimulus_reflex', '~> 3.4'
+gem 'discard', '~> 1.2'
 gem 'paranoia', '~> 2.2'
 gem 'slim-rails'
+gem 'stimulus_reflex', '~> 3.4'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

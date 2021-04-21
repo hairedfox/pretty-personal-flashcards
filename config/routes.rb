@@ -15,7 +15,12 @@ Rails.application.routes.draw do
     get 'confirmation', to: 'confirmations#show'
   end
 
-  resources :decks, only: %i[index new create]
+  resources :decks, only: %i[index new create] do
+    member do
+      patch :deactivate
+      patch :restore
+    end
+  end
 
   mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
 end
