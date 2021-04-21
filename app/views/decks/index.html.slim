@@ -1,0 +1,12 @@
+h1.display-3 Deck List
+
+table.table
+  thead
+    tr
+      th scope="col" #
+      th scope="col" Name
+      th scope="col" Cover
+      th scope="col" Number of cards
+      th scope="col" Status
+  tbody
+    = render partial: "deck", collection: @decks

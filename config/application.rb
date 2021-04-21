@@ -21,6 +21,7 @@ module PrettyPersonalFlashcards
       generate.helper false
       generate.assets false
       generate.view_specs false
+      generate.template_engine :slim
     end
 
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}')]

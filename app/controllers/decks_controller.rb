@@ -1,6 +1,10 @@
 # frozen_string_literal: true
 
 class DecksController < ApplicationController
+  def index
+    @decks = Deck.with_deleted
+  end
+
   def new
     @deck = Deck.new
   end
