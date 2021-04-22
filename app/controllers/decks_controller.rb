@@ -5,7 +5,7 @@ class DecksController < ApplicationController
   before_action :set_deck, only: %i[deactivate restore]
 
   def index
-    @decks = current_user.decks.includes(cover_attachment: :blob)
+    @decks = current_user.decks.order(created_at: :desc).includes(cover_attachment: :blob)
   end
 
   def new

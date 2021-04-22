@@ -1,6 +1,6 @@
-tr
-  th scope="row" = deck.id
+tr scope="row"
   td = deck.name
+  th scope="row" = deck.id
   td = image_tag(deck.cover, class: "cover") if deck.cover.attached?
   td 0
   td = deck.status
